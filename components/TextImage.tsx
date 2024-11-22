@@ -24,7 +24,7 @@ export const TextImage: React.FC<ResponsiveTextImageProps> = ({
       }`}
     >
       {/* Image container */}
-      <div className='flex-shrink-0 w-full lg:w-1/2 h-96 relative'>
+      <div className='flex-shrink-0 w-full lg:w-1/2 h-auto relative sm:h-96 lg:h-[450px]'>
         <Image
           src={imageUrl}
           alt={text}
@@ -39,15 +39,15 @@ export const TextImage: React.FC<ResponsiveTextImageProps> = ({
 
       {/* Text container */}
       <div
-        className={`flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left bg-primary text-white p-4 h-fit sm:h-96  shadow-md shadow-slate-900   ${
+        className={`flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left text-white p-4 leading-relaxed  h-fit sm:h-96 lg:h-[450px] bg-accent shadow-md shadow-slate-900   ${
           reverse
-            ? 'rounded-l-lg rounded-r-none '
-            : 'rounded-r-lg rounded-l-none bg-accent'
+            ? 'rounded-l-lg rounded-r-none  '
+            : 'rounded-r-lg rounded-l-none '
         }`}
       >
-        <h1 className='text-xl md:text-2xl '>{title}</h1>
-        <h2 className='text-lg md:text-xl '>{subtitle}</h2>
-        <p className='text-md '>{text}</p>
+        <h1 className='text-xl md:text-2xl pb-2 text-destructive font-bold'>{title}</h1>
+        <h2 className='text-lg md:text-xl pb-2'>{subtitle}</h2>
+        <p className='text-md'>{text}</p>
       </div>
     </div>
   );

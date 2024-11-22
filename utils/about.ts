@@ -1,7 +1,7 @@
 export const consulting = {
     title:'Empowering Success Trough Strategic Consulting and Hands-On Solutions',
     text:'At Nordic Data Compliance Centre, we excel at making legal and information security challenges more manageable for businesses. Our dedicated, forward-thinking team is committed to enhancing data compliance standards, supporting each company’s unique needs along the way. By fostering strong partnerships with stakeholders and embracing a proactive, accountable approach, we aim to deliver meaningful value and reliable support.',
-    imageUrl:'/images/strategicConsulting.jpg'
+    imageUrl:'/images/evatopictures/lighting.jpg'
 }
 
 export const innovation = {

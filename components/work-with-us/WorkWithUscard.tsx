@@ -13,7 +13,7 @@ function WorkWithUscard({ why }: { why: workWithUs }) {
         className='w-10 h-10 mx-auto mb-3 sm:mb-1'
       />
       <div className='w-full min-w-72'>
-      <h1 className='text-xl pb-1'>{why.title}</h1>
+      <h1 className='text-xl text-primary pb-1'>{why.title}</h1>
       <p className='text-md pb-4'>{why.description}</p>
       </div>
      

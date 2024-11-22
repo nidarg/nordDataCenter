@@ -2,7 +2,7 @@
 
 // import { ContainerScroll } from '@/components/ui/container-scroll-animation';
 
-import SloganWithImage from '@/components/SloganWithImage';
+
 import TextImage from '@/components/TextImage';
 // import { TextGenerateEffect } from '@/components/ui/text-generate-effect';
 
@@ -22,10 +22,7 @@ export default function Home() {
       <div className='mt-[100vh]'>
         <ServiceCardMain />
 
-        {/* <div className='flex flex-col lg:flex-row w-full justify-center gap-8 pt-20'>
-        <TextGenerateEffect words='' />
-      </div> */}
-        <SloganWithImage />
+       
         <TextImage
           title={consulting.title}
           text={consulting.text}

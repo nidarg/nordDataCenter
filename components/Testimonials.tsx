@@ -28,7 +28,7 @@ export default function Testimonials() {
           visible: { scale: 1, opacity: 1 },
         }}
         transition={{ duration: 0.6, ease: 'easeInOut' }}
-        className="text-3xl font-semibold text-center text-gray-900 dark:text-white mb-12"
+        className="text-3xl font-semibold text-center text-destructive mb-12"
       >
         Client Success Stories
       </motion.h2>
@@ -41,7 +41,7 @@ export default function Testimonials() {
           visible: { rotateY: 0, scale: 1 },
         }}
         transition={{ duration: 1, ease: 'easeInOut' }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 rounded-xl shadow-lg  "
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 rounded-xl shadow-lg  "
       >
         {testimonials.map((testimonial, index) => (
           <motion.div
@@ -55,13 +55,14 @@ export default function Testimonials() {
             }}
             transition={{ duration: 0.6, delay: index * 0.2 }}
           >
-            <div className="flex items-center text-neutral-700 dark:text-neutral-300">
+            
+            <div className="flex items-center text-neutral-700 dark:text-neutral-300 pt-10 pb-10">
               <Quote className="w-10 h-10 mr-2 text-primary" />
-              <p className="text-sm italic">{testimonial.description}</p>
+              <p className="text-md italic">{testimonial.description}</p>
             </div>
             <div className="mt-4">
-              <p className="text-neutral-800 dark:text-neutral-100 font-semibold">{testimonial.name}</p>
-              <p className="text-primary font-semibold text-sm">{testimonial.company}</p>
+              {/* <p className="text-neutral-800 dark:text-neutral-100 font-semibold">{testimonial.name}</p>
+              <p className="text-primary font-semibold text-sm">{testimonial.company}</p> */}
             </div>
           </motion.div>
         ))}

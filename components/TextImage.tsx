@@ -41,8 +41,8 @@ export const TextImage: React.FC<ResponsiveTextImageProps> = ({
       <div
         className={`flex flex-col justify-center w-full lg:w-1/2 text-center md:text-left bg-primary text-white p-4 h-fit sm:h-96  shadow-md shadow-slate-900   ${
           reverse
-            ? 'rounded-l-lg rounded-r-none'
-            : 'rounded-r-lg rounded-l-none'
+            ? 'rounded-l-lg rounded-r-none '
+            : 'rounded-r-lg rounded-l-none bg-accent'
         }`}
       >
         <h1 className='text-xl md:text-2xl '>{title}</h1>

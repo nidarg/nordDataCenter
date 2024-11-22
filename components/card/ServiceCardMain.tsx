@@ -5,8 +5,8 @@ import { ServiceCard } from './ServiceCard';
 
 function ServiceCardMain() {
   return (
-    <>
-      <h1 className='text-4xl font-bold dark:text-white text-center'>
+    <div className='container'>
+      <h1 className='text-4xl font-bold dark:text-white text-center mt-20'>
         {' '}
         Our Services
       </h1>
@@ -23,7 +23,7 @@ function ServiceCardMain() {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 }
 

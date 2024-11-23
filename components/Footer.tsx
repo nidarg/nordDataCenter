@@ -5,7 +5,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <footer className="bg-transparent text-neutral-900 dark:text-white border-t border-gray-500 mt-20 py-6">
-      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-6 text-center ">
+      <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-4 gap-6 text-left ">
         
         {/* Column 1: Company Info */}
         <div>
@@ -14,8 +14,29 @@ const Footer = () => {
           <p>Denmark</p>
           <p>VAT DK 44251434</p>
         </div>
-        
-        {/* Column 2: Insurance */}
+
+          {/* Column 2: Services */}
+          <div>
+          <h2 className="text-lg font-semibold">Our Services</h2>
+          <ul className="space-y-2">
+            <li>
+              <Link href="/specialized-projects" className="hover:underline">
+                Specialized Projects
+              </Link>
+            </li>
+            <li>
+              <Link href="/interim-services" className="hover:underline">
+              Interim Services
+              </Link>
+            </li>
+            <li>
+              <Link href="/tailormade-solutions" className="hover:underline">
+              Tailormade solutions for Start-ups, Micro abd SMEs
+              </Link>
+            </li>
+          </ul>
+        </div>
+        {/* Column 3: Insurance */}
         <div>
           <h2 className="text-lg font-semibold">Insurance</h2>
           <p className="leading-relaxed">
@@ -23,7 +44,7 @@ const Footer = () => {
           </p>
         </div>
         
-        {/* Column 3: Links */}
+        {/* Column 4: Links */}
         <div>
           <h2 className="text-lg font-semibold">Resources</h2>
           <ul className="space-y-2">
@@ -34,7 +55,7 @@ const Footer = () => {
             </li>
             <li>
               <Link href="/terms" className="hover:underline">
-              Terms of use and terms and conditions
+              Terms and conditions of use and sale
               </Link>
             </li>
           </ul>

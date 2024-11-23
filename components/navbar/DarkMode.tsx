@@ -18,7 +18,7 @@ function DarkMode() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant='default' size='icon'>
+        <Button variant='destructive' size='icon'>
           <Sun
             style={{ width: '1.7rem', height: '1.7rem' }}
             className='text-white rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0'

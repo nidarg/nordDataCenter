@@ -18,7 +18,7 @@ import VideoBackground from '@/components/VideoBackground';
 export default function Home() {
   return (
     <div className='flex flex-cols justify-center gap-6'>
-      <VideoBackground videoUrl='./videos/video1.mp4' />
+      <VideoBackground videoUrl='./videos/businessman.mov' />
       <div className='mt-[100vh]'>
         <ServiceCardMain />
 

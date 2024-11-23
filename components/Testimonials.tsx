@@ -57,7 +57,7 @@ export default function Testimonials() {
           >
             
             <div className="flex items-center text-neutral-700 dark:text-neutral-300 pt-10 pb-10">
-              <Quote className="w-10 h-10 mr-2 text-primary" />
+              <Quote className="w-10 h-10 mr-2 text-destructive" />
               <p className="text-md italic">{testimonial.description}</p>
             </div>
             <div className="mt-4">

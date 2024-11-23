@@ -15,7 +15,7 @@ function Basket() {
   return (
     <>
       <Button
-        variant='default'
+        variant='destructive'
         size='icon'
         onClick={toggleCart}
         className='relative'
